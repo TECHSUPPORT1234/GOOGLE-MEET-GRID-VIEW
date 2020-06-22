@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', 'LocalRoboto', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+  background: #eeeeee;
+  padding: 2px 0 3px 0;
+  width: min-content;
+  overflow: hidden;
+  font-size: 12px;
+}
+body > * {
+  white-space: nowrap;
+  display: none;
+  padding: 6px 20px;
+  background: #ffffff;
+}
+body .spacer {
+  display: block;
+  padding: 0;
+  margin-bottom: 4px;
+}
+body.not-running #not-running {
+  display: block;
+  font-style: italic;
+}
+body.no-meeting #no-meeting {
+  display: block;
+  font-style: italic;
+}
+body.in-meeting #enabled,
+body.in-meeting #show-only-video,
+body.in-meeting #highlight-speaker,
+body.in-meeting #include-own-video,
+body.in-meeting #auto-enable,
+body.in-meeting #screen-capture-mode,
+body.in-meeting #screen-capture-mode-desc,
+body.in-meeting #advanced-settings {
+  display: flex;
+  align-items: center;
+}
+#screen-capture-mode {
+  padding-bottom: 0;
+}
+#screen-capture-mode-desc {
+  padding-top: 3px;
+  padding-left: 45px;
+}
+body #source-code {
+  display: block;
+}
+#source-code small {
+  border-right: 0.5px solid #cccccc;
+  padding-right: 5px;
+  margin-right: 2px;
+}
+label {
+  color: #999999;
+}
+label:not(.disabled) {
+  cursor: pointer;
+  color: #000000;
+}
+input {
+  margin-right: 8px;
+}
